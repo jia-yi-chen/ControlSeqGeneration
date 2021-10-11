@@ -3,7 +3,7 @@
 
 
 import torch
-from preprocess_cornell import get_id2line,get_data
+from preprocess.preprocess_cornell import get_id2line,get_data
 from torch.autograd import Variable
 
 

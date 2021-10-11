@@ -10,7 +10,7 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.autograd as autograd
 import os
-from preprocess_cornell import get_id2line,get_data
+from preprocess.preprocess_cornell import get_id2line,get_data
 
 from torch.autograd import Variable
 from torch.distributions.multivariate_normal import MultivariateNormal

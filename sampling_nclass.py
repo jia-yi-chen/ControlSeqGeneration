@@ -3,7 +3,7 @@
 
 
 import torch
-from preprocess_emotiondata import get_id2line,get_data
+from preprocess.preprocess_emotiondata import get_id2line,get_data
 from torch.autograd import Variable
 
 

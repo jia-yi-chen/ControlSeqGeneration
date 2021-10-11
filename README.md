@@ -13,5 +13,5 @@ Time: 1/21/2019
 
 ## Getting Started
 ```
-python3 main_CEmoRLGAN
+python3 main_CEmoRLGAN.py
 ```

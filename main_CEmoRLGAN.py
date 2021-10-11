@@ -23,7 +23,7 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.autograd as autograd
 import os
-from preprocess_cornell import get_id2line,get_data
+from preprocess.preprocess_cornell import get_id2line,get_data
 
 from torch.autograd import Variable
 from torch.distributions.multivariate_normal import MultivariateNormal
@@ -97,9 +97,9 @@ Generation_MODE = "top1"#""random_sampling"
 
 from sampling_nclass import sampling_real_data
 from sampling_nclass import preparing_new_training_samples_for_D
-from AttributeEncoder import AttributeEncoder
-from Generator import Generator
-from ClassDiscriminator import DiscriminatorCNN
+from models.AttributeEncoder import AttributeEncoder
+from models.Generator import Generator
+from models.ClassDiscriminator import DiscriminatorCNN
 
 
 def train_G(G, E, emotion_num, e_optimizer, g_optimizer, g_steps, D, real_data, Voc, emotion_types, Reward_Thres):  # fix D, use D to get rewards
